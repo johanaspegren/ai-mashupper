@@ -1,0 +1,24 @@
+{{#if result.show}}
+
+
+    <div class = "row">
+        <div class = "one column">&nbsp;</div>
+
+        {{#each result.ideas}}
+        <div class = "three columns">
+            <div class="card">
+                <img src = "{{this.imgUrl}}" class="card__image">
+                <div class="card__overlay">
+                </div>
+                <div class = "ol"> 
+                    <h5 >{{this.heading}}</h5>
+                    <p >{{this.description}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
+    </div>
+
+{{/if}}

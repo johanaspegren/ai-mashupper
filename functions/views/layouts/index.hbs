@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="../css/overlay.css" />
+
+    <!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../images/favicon.ico" />
+
+    <title>Mashup</title>
+    <script>
+      function closeOverlay(){
+        document.getElementById('ideasOverlay').style.visibility = 'hidden'
+      }
+    </script>
+  </head>
+
+  <body background="../images/bg_tv_2023.jpg" bgproperties="fixed" id="background">
+
+    <div class="row topbanner">&nbsp;</div>
+    <div class="row toptext">
+      <div class="three columns">&nbsp;</div>
+      <div class="five columns">
+        &nbsp;
+      </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 3%;">
+        <form action="/mash" method="POST" enctype="application/json">
+            <div class="row">
+                <div class="one column">&nbsp;</div>
+                <div class="six columns">
+                  <h4 class="toptext">Mash up a challenge</h4>
+                </div>
+                <div class="four columns">
+                   &nbsp;<button type="submit">Submit</button>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 3%;">
+                <div class="one column">&nbsp;</div>
+                <div class="eight columns">
+                  <input style="border:none" type="text" id="challenge" name="challenge" required placeholder="Challenge, such as carbonfree transport or child obesity"/>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="one column">&nbsp;</div>
+                <div class="three columns">
+                    <h6 class="toptext">Emerging tech</h6>
+                    <div id="checkboxes">
+                        <input type="checkbox" name="emergingTech" value="AI" id="et1" />
+                        <label class="chkbox_btnstyle" for="et1">AI</label>
+                        <input type="checkbox" name="emergingTech" value="VR" id="et2" />
+                        <label class="chkbox_btnstyle" for="et2">VR</label>
+                        <input type="checkbox" name="emergingTech" value="Quantum" id="et3" />
+                        <label class="chkbox_btnstyle" for="et3">Quantum</label>
+                    </div>
+                </div>
+                <div class="three columns">
+                    <h6 class="toptext">Existing Services</h6>
+                    <div id="checkboxes">
+                        <input type="checkbox" name="existingServices" value="Foodora" id="es1" />
+                        <label class="chkbox_btnstyle" for="es1">Foodora</label>
+                        <input type="checkbox" name="existingServices" value="Spotify" id="es2" />
+                        <label class="chkbox_btnstyle" for="es2">Spotify</label>
+                        <input type="checkbox" name="existingServices" value="Tinder" id="es3" />
+                        <label class="chkbox_btnstyle" for="es3">Tinder</label>
+                    </div>
+                </div>
+                <div class="three columns">
+                    <h6 class="toptext">Cool stuff</h6>
+                    <div id="checkboxes">
+                        <input type="checkbox" name="rGroup" value="Drones" id="r1" />
+                        <label class="chkbox_btnstyle" for="r1">Drones</label>
+                        <input type="checkbox" name="rGroup" value="Social robos" id="r2" />
+                        <label class="chkbox_btnstyle" for="r2">Social robos</label>
+                        <input type="checkbox" name="rGroup" value="Iridium" id="r3" />
+                        <label class="chkbox_btnstyle" for="r3">Iridium</label>
+                    </div>
+                </div>
+            </div>
+          </form>
+        </div>        
+      </div>
+      {{{body}}}
+    </div>
+  </body>
+</html>
